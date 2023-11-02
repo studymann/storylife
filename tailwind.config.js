@@ -20,7 +20,8 @@ module.exports = {
         accent: "#FF7A03",
         text: "#FF9F04",
         dark: "#001019",
-        light: "#FFFFFF"
+        light: "#FFFFFF",
+        grad: "#FFA104",
       }
     }
   },
