@@ -4,7 +4,7 @@ import Image from "next/image"
 const Hero = () => {
     return (
         <>
-        <div className='bg-color-primary min-h-[90vh] relative w-full flex items-center'>
+        <div className='bg-color-primary min-h-[550px] md:min-h-screen relative w-full flex items-center'>
           <div className="absolute inset-0">
             <Image src="/v_primary.png" fill className='py-10' />
           </div>
@@ -23,17 +23,17 @@ const Hero = () => {
               <Play size={32} weight="fill" className="text-color-light -rotate-45" />
             </div>
           </div>
-          <div className="relative z-10 flex flex-row px-20">
-            <div className="grid grid-cols-3 gap-4 pt-16">
-              <div className="col-span-2">
-                <h1 className="text-7xl text-color-light font-medium drop-shadow-md">STORY</h1>
-                <h1 className="text-7xl text-color-light font-medium drop-shadow-md">LIFE</h1>
-                <h1 className="text-7xl text-color-accent font-medium drop-shadow-md">PHOTOGRAPHER</h1>
+          <div className="relative z-10 flex flex-row px-4 md:px-20">
+            <div className="grid grid-flow-row md:grid-cols-3 justify-items-center md:justify-items-start pt-10 md:gap-4 md:pt-16">
+              <div className="col-span-2 text-center md:text-left">
+                <h1 className="text-xl text-color-light font-bold drop-shadow-md">STORY</h1>
+                <h1 className="text-xl text-color-light font-bold drop-shadow-md">LIFE</h1>
+                <h1 className="text-xl text-color-accent font-bold drop-shadow-md">PHOTOGRAPHER</h1>
                 <Image src="/line.png" height={25} width={25} alt='Line' className='mt-24 mb-1' />
-                <p className='text-3xl text-color-light font-bold'>Pro Photographer</p>
+                <p className='text-sm text-color-light font-medium md:font-bold'>Pro Photographer</p>
               </div>
-              <div className="col-span-1 ps-10 pt-24">
-                <p className="text-xl text-color-light text-center">“ Berbicara tentang sebuah moment penting dalam hidup yang takan pernah terlupakan, Maka kami akan membantu kamu untuk mengabadikannya. “</p>
+              <div className="col-span-1 md:ps-10 md:pt-24">
+                <p className="text-sm text-color-light text-center">“ Berbicara tentang sebuah moment penting dalam hidup yang takan pernah terlupakan, Maka kami akan membantu kamu untuk mengabadikannya. “</p>
               </div>
             </div>
           </div>
